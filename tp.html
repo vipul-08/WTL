@@ -12,14 +12,20 @@
     
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
  <link rel="stylesheet" type="text/css" href="slidecss.css"> 
+     <link rel="stylesheet" type="text/css" href="dropdowncss.css"> 
+    
 
    
 <style type="text/css">
     
- .content{
-       background-image: url(11.jpg);
+    body{
+        background: #242632;
         
     }
+    p{
+        background: ;
+    }
+ 
     .page-header{
         border-bottom:1px solid black;
         margin: 0px;
@@ -59,9 +65,7 @@
                       position: relative;
                        left: 100px; 
                     }
-    .bg{
-            background-color: aliceblue;
-        }
+   
     
     .atiles{
                 width:25%;
@@ -92,21 +96,21 @@
         }
     
     .b2l,.b1l,.b3l{
-        color: red;
-        background-color: black;
+        color: black;
+        background-color: mediumvioletred;
         height: 40px;
         width: 40px;
-        border-radius: 50%;
+        border-radius:25%;
         border: none;
         float: left;
     }
     
     .b2r,.b1r,.b3r{
-        color: red;
-        background-color: black;
+        color: black;
+        background-color:mediumvioletred;
         height: 40px;
         width: 40px;
-        border-radius: 50%;
+        border-radius: 25%;
         border: none;
         float: right;
     }
@@ -119,6 +123,19 @@
         font-size: 30px;
         
     }
+    .dropbtn {
+        margin: 0px;
+    width: 40px;
+    height: 40px;
+    background-color:  black;
+    border-radius: 50%;
+}
+    .nav-right{
+        position: absolute;
+        right: 10px;
+        
+    }
+    
 </style>
     
 </head>
@@ -139,12 +156,19 @@
         <a class="nav-link" href="#"><div id="about">About</div></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="contactus.html"><span class="glyphicon glyphicon-send"></span>ContactUs</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contactus.html">Contact Us</a>
-      </li>
-    </ul>
+        <li class="dropdown navbar-nav nav-link nav-right">
+          <button class="dropbtn"><span class="glyphicon glyphicon-user"></span></button>
+          <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a  href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a>
+                <a  href="#">LogOut</a>
+
+          </div>
+        </li>
+    </ul>      
+      
   </div>
 </nav>
     
