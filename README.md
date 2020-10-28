@@ -1,2 +1,2 @@
 # WTL
-WTL Project
+WTL project
